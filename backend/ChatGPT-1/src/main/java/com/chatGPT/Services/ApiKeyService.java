@@ -19,6 +19,7 @@ public class ApiKeyService implements ApiKeyInterface{
         apiKeyRepo.save(apiKey);
 		return key;
 	}
+	@Override
 	public String getApiKey(Integer id) {
 		ApiKey a = apiKeyRepo.findById(id).get();
 		return a.getApiKey();
