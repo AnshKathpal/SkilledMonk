@@ -1,5 +1,6 @@
 package com.chatGPT.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -15,7 +16,7 @@ import com.theokanning.openai.service.OpenAiService;
 @RestController
 @RequestMapping("/chatbot")
 public class ChatController {
-	
+	@Autowired
 	@Value("${openai.model}")
 	private String model;
 	
@@ -31,6 +32,10 @@ public class ChatController {
 		ChatCompletionRequest chatRequest = ChatCompletionRequest.builder().messages(prompt.getMessages()).model("gpt-3.5-turbo-0613").build();
 		
 		return openaiService.createChatCompletion(chatRequest).getChoices().get(0).getMessage().getContent();
+	}
+	
+	public String secretKey() {
+		
 	}
 
 }
