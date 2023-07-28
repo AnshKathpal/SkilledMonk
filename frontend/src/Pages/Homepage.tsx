@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 export const Homepage = () => {
   return (
@@ -21,7 +22,7 @@ export const Homepage = () => {
         }}
       >
         <h2 className="text-4xl">
-          About InterviewSensei, A Digital Interview Paltform
+          About InterviewSensei, A Digital Interview Platform
         </h2>
         <div
           className=" m-auto mt-6 p-3 mb-4 text-left"
@@ -122,16 +123,35 @@ export const Homepage = () => {
           </span>
         </div>
       </div>
-      <div className="border border-solid border-blue-800  m-6 p-4 grid grid-cols-3 gap-16 ">
+      <div className = "border border-solid border-pink-700" >
+        <p className="text-3xl" >Interview Preperation Playbooks</p>
+        <div className="border border-solid border-blue-800  m-6 p-4 grid grid-cols-3 gap-16 " >
         <div className="border border-solid border-red-600 h-80 ">
-          <p>MERN</p>
+          <p className = "text-xl">MERN Stack</p>
+          <Link to="/mernstack" >
+          <button className="group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
+            Study Material
+            <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
+          </button>
+          </Link>
+          
         </div>
         <div className="border border-solid border-red-600 h-80 ">
-          <p>NODE</p>
+          <p className = "text-xl">NODE Stack</p>
+          <button className="group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
+            Study Material
+            <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
+          </button>
         </div>
         <div className="border border-solid border-red-600 h-80">
-          <p>JAVA</p>
+          <p className = "text-xl" >JAVA Stack</p>
+          <button className="group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
+            Study Material
+            <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
+          </button>
         </div>
+        </div>
+       
       </div>
     </>
   );
