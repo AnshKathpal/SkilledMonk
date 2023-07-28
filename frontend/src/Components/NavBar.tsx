@@ -38,7 +38,7 @@ export const NavBar = () => {
                 {/* <div className=" border border-solid border-blue-700 flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"> */}
                 <div className="flex flex-shrink-0 items-center justify-center h-full w-80 overflow-hidden">
                   <img
-                    className="h-80 overflow-hidden"
+                    className="h-full overflow-hidden"
                     src={logo}
                     alt="Your Company"
                   />
