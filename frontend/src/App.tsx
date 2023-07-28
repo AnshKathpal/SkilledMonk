@@ -1,11 +1,12 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Interviewpage from './component/Interviewpage';
+
 
 function App() {
   return (
     <div className="App">
-      
+      <Interviewpage />
+
     </div>
   );
 }
