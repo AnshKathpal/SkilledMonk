@@ -122,6 +122,17 @@ export const Homepage = () => {
           </span>
         </div>
       </div>
+      <div className="border border-solid border-blue-800  m-6 p-4 grid grid-cols-3 gap-16 ">
+        <div className="border border-solid border-red-600 h-80 ">
+          <p>MERN</p>
+        </div>
+        <div className="border border-solid border-red-600 h-80 ">
+          <p>NODE</p>
+        </div>
+        <div className="border border-solid border-red-600 h-80">
+          <p>JAVA</p>
+        </div>
+      </div>
     </>
   );
 };
