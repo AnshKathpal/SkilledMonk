@@ -2,10 +2,11 @@ import React from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon, BellIcon } from "@heroicons/react/24/outline";
 import logo from "../Images/Logo.png";
+import { NavLink } from "react-router-dom";
 
 const navigation = [
   { name: "Dashboard", href: "#", current: true },
-  { name: "Digital Interview", href: "#", current: false },
+  { name: "Digital Interview", href: "/interview", current: false },
   { name: "Progress Sheet", href: "#", current: false },
   { name: "Study Material", href: "#", current: false },
   { name: "Ask your Doubts", href: "#", current: false },
@@ -44,11 +45,11 @@ export const NavBar = () => {
                   />
                 </div>
                 <div className=" border border-solid hidden sm:ml-6 sm:block">
-                  <div className="flex space-x-4">
+                <div className="flex space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <NavLink
                         key={item.name}
-                        href={item.href}
+                        to={item.href ?? "/interview"}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
@@ -58,7 +59,7 @@ export const NavBar = () => {
                         aria-current={item.current ? "page" : undefined}
                       >
                         {item.name}
-                      </a>
+                      </NavLink>
                     ))}
                   </div>
                 </div>
