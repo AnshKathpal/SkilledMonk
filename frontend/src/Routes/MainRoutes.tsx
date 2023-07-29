@@ -3,6 +3,7 @@ import { Homepage } from "../Pages/Homepage"
 import Interviewpage from "../component/Interviewpage"
 import { Mern } from "../Pages/Mern"
 import { Node } from "../Pages/Node"
+import { Chat } from "../Pages/Chat"
 
 export const MainRoutes = () => {
     return(
@@ -11,6 +12,7 @@ export const MainRoutes = () => {
         <Route path = "/interview" element = {<Interviewpage />} />
         <Route path = "/mernstack" element = {<Mern />} />
         <Route path = "/nodestack" element = {<Node />} />
+        <Route path = "/chathere" element = {<Chat />} />
     </Routes>
     )
     
