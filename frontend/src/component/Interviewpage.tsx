@@ -66,7 +66,7 @@ const Interviewpage = () => {
                 submitanswer()
             }
         } else {
-            toast.error('The interview has not yet started!', {
+            toast.warn('The interview has not yet started!', {
                 position: "top-center",
                 autoClose: 1000,
                 transition: Zoom,
@@ -75,7 +75,7 @@ const Interviewpage = () => {
                 pauseOnHover: true,
                 draggable: true,
                 progress: undefined,
-                theme: "colored",
+                theme: "dark",
             });
         }
     };
@@ -95,7 +95,7 @@ const Interviewpage = () => {
             pauseOnHover: true,
             draggable: true,
             progress: undefined,
-            theme: "light",
+            theme: "dark",
         });
 
         setIsLoading(false)
@@ -163,7 +163,7 @@ const Interviewpage = () => {
                     pauseOnHover: true,
                     draggable: true,
                     progress: undefined,
-                    theme: "colored",
+                    theme: "dark",
                 });
                 setDisplayText(res.data)
                 console.log(res.data)
@@ -182,13 +182,15 @@ const Interviewpage = () => {
 
 
 
+
+
     return (
-        <div style={{ width: "90%", margin: "auto", marginBottom: "50px" }} className="mt-10 mb-16">
+        <div style={{ width: "90%", margin: "auto", marginBottom: "50px", marginTop:"30px" }} className="mt-10 mb-16">
             <div style={{
                 background: "linear-gradient(to right, #434343 0%, black 100%)"
 
             }} className="ml-5 pt-3 text-xl font-extrabold mt-3 mb-3 rounded-md pl-10 text-white">
-                <pre style={{ height: "500px", overflowY: "scroll", lineHeight: "35px", wordWrap: "break-word", whiteSpace: "pre-wrap" }}>{isLoading ? <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>  <img width={"200px"} src="https://raw.githubusercontent.com/Codelessly/FlutterLoadingGIFs/master/packages/cupertino_activity_indicator_square_medium.gif" alt="" /></div> : displayText}</pre>
+                <pre style={{ height: "500px", overflowY: "scroll", lineHeight: "35px", wordWrap: "break-word", whiteSpace: "pre-wrap", textAlign:"left" }}>{isLoading ? <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>  <img width={"200px"} src="https://raw.githubusercontent.com/Codelessly/FlutterLoadingGIFs/master/packages/cupertino_activity_indicator_square_medium.gif" alt="" /></div> : displayText}</pre>
             </div>
             <div>
                 {
@@ -196,19 +198,19 @@ const Interviewpage = () => {
 
 
                         <input
-                            style={{ width: "80%" }}
+                            style={{ width: "97%" }}
                             type="text"
                             value={text}
-                            className="border-4 border-black-500 px-8  ml-5 py-6 rounded-md font-semibold text-xl"
+                            className="border-4 border-black-500 px-8  py-6 rounded-md font-semibold text-xl"
                             placeholder="Enter answer here"
                             onChange={handleChange}
                         />
                 }
                 <div className="flex flex-wrap">
-                    <button style={{ position: "relative", backgroundImage: displayText === "" ? "linear-gradient(120deg, #f6d365 0%, #fda085 100%)" : "linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)" }}
+                    <button style={{ position: "relative", backgroundImage: displayText === "" ?"linear-gradient(to right, #434343 0%, black 100%)" : "linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%)" }}
                         onClick={startinterview}
                         disabled={displayText !== "" ? true : false}
-                        className="  text-black font-bold px-16 py-3 mt-3 ml-10 rounded"
+                        className="  text-white font-bold px-16 py-3 mt-3 ml-5 rounded"
                     >
                         {displayText === "" ? "START INTERVIEW" : "IN PROGRESS"}
                         {displayText !== "" && <img style={{ width: "50px", mixBlendMode: "multiply", position: "absolute", top: "12px", right: "12px" }} src="http://cdn.lowgif.com/full/ffda60e00be16a45-animated-progress-bar-gif-free-download-www-imgkid-com.gif" alt="progress_img" />}
@@ -224,14 +226,13 @@ const Interviewpage = () => {
 
                             <button
                                 onClick={clear}
-                                className="bg-red-500 hover:bg-blue-800 text-white font-semibold px-16 py-3 mt-3 mx-3 ml-10 rounded"
+                                className="bg-red-600 hover:bg-red-200  text-black font-bold px-16 py-3 mt-3 mx-3 ml-10 rounded"
                             >
                                 END INTERVIEW
                             </button>
                     }
                 </div>
             </div>
-
             <ToastContainer position="top-center"
                 autoClose={1000}
                 hideProgressBar={false}
