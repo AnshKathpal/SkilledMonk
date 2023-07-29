@@ -14,6 +14,8 @@ const Interviewpage = () => {
 
     const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
         setText(event.target.value);
+
+        
     };
 
 
