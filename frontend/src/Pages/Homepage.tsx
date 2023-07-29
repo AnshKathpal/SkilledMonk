@@ -22,7 +22,7 @@ export const Homepage = () => {
         }}
       >
         <h2 className="text-4xl">
-          About InterviewSensei, A Digital Interview Paltform
+          About InterviewSensei, A Digital Interview Platform
         </h2>
         <div
           className=" m-auto mt-6 p-3 mb-4 text-left"
@@ -124,28 +124,52 @@ export const Homepage = () => {
         </div>
       </div>
       <div className="border border-solid border-blue-800  m-6 p-4 grid grid-cols-3 gap-16 ">
-        <div className="border border-solid border-red-600 h-80 ">
-          <p>MERN</p>
-          <Link to="/mernstack" >
-          <button className="group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
-            Study Material
-            <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
-          </button>
+        <div style={{ boxShadow : "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px" }} className=" flex flex-col gap-6 p-5 ">
+          <p className="text-2xl font-bold">MERN</p>
+          <p>
+            MERN stack is a collection of technologies that enables faster
+            application development. It is used by developers worldwide. The
+            main purpose of using MERN stack is to develop apps using JavaScript
+            only. This is because the four technologies that make up the
+            technology stack are all JS-based.
+          </p>
+          <Link to="/mernstack">
+            <button className="group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
+              Study Material
+              <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
+            </button>
           </Link>
         </div>
-        <div className="border border-solid border-red-600 h-80 ">
-          <p>NODE</p>
-          <button className="group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
-            Study Material
-            <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
-          </button>
+        <div style={{ boxShadow : "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px" }} className=" flex flex-col gap-6 p-5 ">
+          <p className="text-2xl font-bold">NODE</p>
+          <p>
+            Node.js is a cross-platform, open-source server environment that can
+            run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end
+            JavaScript runtime environment, runs on the V8 JavaScript Engine,
+            and executes JavaScript code outside a web browser.
+          </p>
+          <Link to="/nodestack">
+            <button className="group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
+              Study Material
+              <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
+            </button>
+          </Link>
         </div>
-        <div className="border border-solid border-red-600 h-80">
-          <p>JAVA</p>
-          <button className="group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
-            Study Material
-            <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
-          </button>
+        <div style={{ boxShadow : "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px" }} className=" flex flex-col gap-6 p-5 ">
+          <p className="text-2xl font-bold">JAVA</p>
+          <p>
+            Java is a most popular, object-oriented, widely used programming
+            language that is utilized for Android development, web development,
+            artificial intelligence, cloud applications, and much more. So,
+            mastering this gives you great opportunities in bigger
+            organizations.
+          </p>
+          <Link to="/javastack">
+            <button className="group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
+              Study Material
+              <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
+            </button>
+          </Link>
         </div>
       </div>
     </>
