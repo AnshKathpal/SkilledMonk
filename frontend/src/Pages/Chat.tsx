@@ -33,16 +33,6 @@ export const Chat = () => {
             content: text,
           },
         ],
-        // "messages": [
-        //   {
-        //     "role": "system",
-        //     "content": "As a senior developer, you will be conducting an interview with tech students. Follow these rules for the interview process:\n\nAsk only conceptual questions from the given tech stacks list [React, Nodejs, Java] to the user.\nOnce the interview starts, begin by asking a question related to the chosen tech stack. There is no need to ask the user to choose a tech stack again for subsequent questions.\nFocus solely on concepts and do not inquire about work experience during the interview.\nPresent one question at a time, and refrain from repeating any previously asked questions.\nDo not provide a list of questions to the user all at once.\nAfter the user provides an answer, proceed with the next question without asking them to select a tech stack again.\nContinue this question-answer process until the interview is stopped by me.\nWhen I ask you for feedback, rate the user's interview responses on a scale from 0 to 10."
-        //   },
-        //   {
-        //     "role": "user",
-        //     "content": ""
-        //   }
-        // ]
       })
       .then((res) => {
         // setDisplayText(res.data)
