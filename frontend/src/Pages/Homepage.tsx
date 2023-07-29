@@ -1,18 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import video from "../Images/video.mp4";
 
 export const Homepage = () => {
   return (
     <>
-      <div
-        className="border border-solid border-blue-800"
-        style={{ height: "80vh" }}
-      >
-        <img
-          className="w-full h-full object-cover"
-          src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-          alt=""
-        />
+      <div style={{ height: "80vh" }}>
+        {/* <img className="w-full h-full object-cover" src={video} alt="" /> */}
+        <video
+          style={{
+            objectFit: "cover",
+            filter: "brightness(70%)",
+            width: "100%",
+            height: "100%",
+          }}
+          src={video}
+          autoPlay
+          muted
+          loop
+        ></video>
       </div>
       <div
         className=" m-6 p-4"
@@ -123,8 +129,14 @@ export const Homepage = () => {
           </span>
         </div>
       </div>
-      <div className="border border-solid border-blue-800  m-6 p-4 grid grid-cols-3 gap-16 ">
-        <div style={{ boxShadow : "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px" }} className=" flex flex-col gap-6 p-5 ">
+      <div className="  m-6 p-4 grid grid-cols-3 gap-16 ">
+        <div
+          style={{
+            boxShadow:
+              "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
+          }}
+          className=" flex flex-col gap-6 p-5 "
+        >
           <p className="text-2xl font-bold">MERN</p>
           <p>
             MERN stack is a collection of technologies that enables faster
@@ -140,7 +152,13 @@ export const Homepage = () => {
             </button>
           </Link>
         </div>
-        <div style={{ boxShadow : "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px" }} className=" flex flex-col gap-6 p-5 ">
+        <div
+          style={{
+            boxShadow:
+              "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
+          }}
+          className=" flex flex-col gap-6 p-5 "
+        >
           <p className="text-2xl font-bold">NODE</p>
           <p>
             Node.js is a cross-platform, open-source server environment that can
@@ -155,7 +173,13 @@ export const Homepage = () => {
             </button>
           </Link>
         </div>
-        <div style={{ boxShadow : "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px" }} className=" flex flex-col gap-6 p-5 ">
+        <div
+          style={{
+            boxShadow:
+              "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
+          }}
+          className=" flex flex-col gap-6 p-5 "
+        >
           <p className="text-2xl font-bold">JAVA</p>
           <p>
             Java is a most popular, object-oriented, widely used programming

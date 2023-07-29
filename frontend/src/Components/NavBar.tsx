@@ -19,10 +19,17 @@ function classNames(...classes: string[]) {
 export const NavBar = () => {
   return (
     <div>
-      <Disclosure as="nav" className="bg-white">
+      <Disclosure
+        as="nav"
+        className="bg-white"
+        style={{
+          boxShadow:
+            " rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset",
+        }}
+      >
         {({ open }) => (
           <>
-            <div className="mx-auto h-28 px-2 sm:px-6 lg:px-8 border border-solid border-black">
+            <div className="mx-auto h-28 px-2 sm:px-6 lg:px-8">
               <div className="relative flex h-full items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
@@ -37,17 +44,16 @@ export const NavBar = () => {
                   </Disclosure.Button>
                 </div>
                 {/* <div className=" border border-solid border-blue-700 flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"> */}
-              
-                  <div className="flex flex-shrink-0 items-center justify-center h-full w-80 overflow-hidden">
+
+                <div className="flex flex-shrink-0 items-center justify-center h-full w-80 overflow-hidden">
                   <NavLink to="/">
                     <img
                       className="h-full overflow-hidden"
                       src={logo}
                       alt="Your Company"
                     />
-                    </NavLink>
-                  </div>
-                
+                  </NavLink>
+                </div>
 
                 <div className=" border border-solid hidden sm:ml-6 sm:block">
                   <div className="flex space-x-4">
@@ -87,7 +93,7 @@ export const NavBar = () => {
                         <span className="sr-only">Open user menu</span>
                         <img
                           className="h-8 w-8 rounded-full"
-                          src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                          src="https://www.w3schools.com/howto/img_avatar.png"
                           alt=""
                         />
                       </Menu.Button>

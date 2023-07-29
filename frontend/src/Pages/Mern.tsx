@@ -5,6 +5,7 @@ import node from "../Images/nodejs-logo.png";
 import reactlogo from "../Images/REACT-LOGO.png";
 import redux from "../Images/redux-logo.png";
 import typescript from "../Images/typescript-logo.png";
+import { Link, NavLink } from "react-router-dom";
 
 export const Mern = () => {
   return (
@@ -27,10 +28,12 @@ export const Mern = () => {
                 managing the state of these components efficiently.
               </p>
             </div>
-            <button className=" mt-3 group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
-              Read More
-              <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
-            </button>
+            <Link to="https://react.dev/learn">
+              <button className=" mt-3 group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
+                Read More
+                <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="bg-gray-100">
@@ -40,6 +43,7 @@ export const Mern = () => {
               src={redux}
               alt="Profile picture"
             />
+
             <h2 className="text-center text-2xl font-semibold mt-3">Redux</h2>
             <div className="mt-5">
               <p className="text-gray-600 mt-2">
@@ -50,10 +54,12 @@ export const Mern = () => {
                 non-browser environments.
               </p>
             </div>
-            <button className=" mt-3 group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
-              Read More
-              <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
-            </button>
+            <Link to="https://redux.js.org/">
+              <button className=" mt-3 group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
+                Read More
+                <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="bg-gray-100">
@@ -75,10 +81,12 @@ export const Mern = () => {
                 standard JavaScript code.
               </p>
             </div>
-            <button className=" mt-3 group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
-              Read More
-              <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
-            </button>
+            <Link to="https://www.typescriptlang.org/">
+              <button className=" mt-3 group relative h-12 w-48 overflow-hidden rounded-2xl bg-blue-800 text-lg font-bold text-white">
+                Read More
+                <div className="absolute inset-0 h-full w-full scale-0 rounded-2xl transition-all duration-300 group-hover:scale-100 group-hover:bg-white/30"></div>
+              </button>
+            </Link>
           </div>
         </div>
         <div className="bg-gray-100">

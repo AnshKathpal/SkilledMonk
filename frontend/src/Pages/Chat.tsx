@@ -79,12 +79,15 @@ export const Chat = () => {
 
   return (
     <>
-      <div className="border border-solid border-red-500 text-5xl m-6 p-3">
+      <div style={{
+            boxShadow:
+              "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
+          }} className="text-5xl m-6 p-3">
         <p>Ask your Doubts from our ChatBot</p>
         <p className="text-2xl m-2 p-2">Feel free to ask anything...</p>
       </div>
       <div
-        className="border border-solid border-red-500 m-auto text-3xl text-left p-6"
+        className=" m-auto text-3xl text-left p-6"
         style={{
           width: "80%",
           height: "55vh",
