@@ -2,11 +2,15 @@ package com.chatGPT.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.chatGPT.Services.ApiKeyService;
@@ -16,10 +20,12 @@ import com.theokanning.openai.service.OpenAiService;
 
 @RestController
 @RequestMapping("/chatbot")
+@CrossOrigin("*")
 public class ChatController {
 	
 	@Autowired
 	private ApiKeyService apiservice;
+	
 	@Value("${openai.model}")
 	private String model;
 	
@@ -37,22 +43,17 @@ public class ChatController {
 		return openaiService.createChatCompletion(chatRequest).getChoices().get(0).getMessage().getContent();
 	}
 	
-	@PostMapping("/addkey")
-	public String secretKey(@PathVariable String secretkey) {
-//		String a = 
-		
+	@PostMapping("/addkey{secretkey}")
+	public ResponseEntity<String> secretKey(@PathVariable String secretkey) {
 		String key = apiservice.addApiKey(secretkey);
-		
-		return key;
-		
+		return new ResponseEntity<String>(key, HttpStatus.OK);
 	}
 	
-	@GetMapping("/getkey")
-	public String getSecretKey(@PathVariable Integer id) {
+	@GetMapping("/getkey/{id}")
+	public ResponseEntity<String> getSecretKey(@PathVariable Integer id) {
 		String apikey = apiservice.getApiKey(id);
-		
 		key = apikey;
-		return apikey;
+		return new ResponseEntity<String>(apikey, HttpStatus.OK);
 	}
 
 }

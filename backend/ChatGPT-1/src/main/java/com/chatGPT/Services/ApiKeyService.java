@@ -8,12 +8,13 @@ import com.chatGPT.model.ApiKey;
 
 @Service
 public class ApiKeyService implements ApiKeyInterface{
+	
 	@Autowired
 	public ApiKeyRepo apiKeyRepo;
 
 	@Override
 	public String addApiKey(String key) {
-		// TODO Auto-generated method stub
+		if(key == null) throw new RuntimeException("key is null");
 		ApiKey apiKey = new ApiKey();
         apiKey.setApiKey(key); // Set the apiKey value using the provided key
         apiKeyRepo.save(apiKey);
@@ -21,8 +22,13 @@ public class ApiKeyService implements ApiKeyInterface{
 	}
 	@Override
 	public String getApiKey(Integer id) {
-		ApiKey a = apiKeyRepo.findById(id).get();
-		return a.getApiKey();
+		if(id > 0 && id != null) {
+			ApiKey a = apiKeyRepo.findById(id).get();
+			return a.getApiKey();
+		}
+		else {
+			throw new RuntimeException("provide correct id");
+		}
 	}
  
 }
