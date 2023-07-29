@@ -9,7 +9,7 @@ const navigation = [
   { name: "Digital Interview", href: "/interview", current: false },
   { name: "Progress Sheet", href: "#", current: false },
   { name: "Study Material", href: "#", current: false },
-  { name: "Ask your Doubts", href: "#", current: false },
+  { name: "Ask your Doubts", href: "/chathere", current: false },
 ];
 
 function classNames(...classes: string[]) {
