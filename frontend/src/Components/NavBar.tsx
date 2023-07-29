@@ -2,10 +2,10 @@ import React from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon, BellIcon } from "@heroicons/react/24/outline";
 import logo from "../Images/Logo.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const navigation = [
-  { name: "Dashboard", href: "#", current: true },
+  { name: "Dashboard", href: "/", current: true },
   { name: "Digital Interview", href: "/interview", current: false },
   { name: "Progress Sheet", href: "#", current: false },
   { name: "Study Material", href: "#", current: false },
@@ -37,19 +37,24 @@ export const NavBar = () => {
                   </Disclosure.Button>
                 </div>
                 {/* <div className=" border border-solid border-blue-700 flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"> */}
-                <div className="flex flex-shrink-0 items-center justify-center h-full w-80 overflow-hidden">
-                  <img
-                    className="h-full overflow-hidden"
-                    src={logo}
-                    alt="Your Company"
-                  />
-                </div>
+              
+                  <div className="flex flex-shrink-0 items-center justify-center h-full w-80 overflow-hidden">
+                  <NavLink to="/">
+                    <img
+                      className="h-full overflow-hidden"
+                      src={logo}
+                      alt="Your Company"
+                    />
+                    </NavLink>
+                  </div>
+                
+
                 <div className=" border border-solid hidden sm:ml-6 sm:block">
-                <div className="flex space-x-4">
+                  <div className="flex space-x-4">
                     {navigation.map((item) => (
                       <NavLink
                         key={item.name}
-                        to={item.href ?? "/interview"}
+                        to={item.href ?? "/"}
                         className={classNames(
                           item.current
                             ? "bg-gray-900 text-white"
