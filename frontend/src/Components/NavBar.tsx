@@ -1,7 +1,7 @@
 import React from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon, BellIcon } from "@heroicons/react/24/outline";
-import logo from "../Images/Logo.png";
+import logo from "../Images/newlogo-removebg.png";
 import { Link, NavLink } from "react-router-dom";
 
 const navigation = [
@@ -45,10 +45,10 @@ export const NavBar = () => {
                 </div>
                 {/* <div className=" border border-solid border-blue-700 flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"> */}
 
-                <div className="flex flex-shrink-0 items-center justify-center h-full w-80 overflow-hidden">
+                <div className="flex flex-shrink-0 items-center justify-center w-80 overflow-hidden relative">
                   <NavLink to="/">
                     <img
-                      className="h-full overflow-hidden"
+                      className="h-full overflow-hidden relative top-5"
                       src={logo}
                       alt="Your Company"
                     />

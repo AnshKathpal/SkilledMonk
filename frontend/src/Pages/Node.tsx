@@ -8,8 +8,8 @@ import typescript from "../Images/redis-logo.png";
 
 export const Node = () => {
   return (
-    <>
-      <div className="m-6 grid grid-cols-3 ">
+    <div className="bg-#e0e2e6" >
+      <div className="m-6 grid grid-cols-3 bg-#e0e2e6 ">
         <div className="bg-gray-100">
           <div className="max-w-lg mx-auto my-10 bg-white rounded-lg shadow-md p-5">
             <img
@@ -151,6 +151,6 @@ export const Node = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

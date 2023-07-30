@@ -4,7 +4,7 @@ import video from "../Images/video.mp4";
 
 export const Homepage = () => {
   return (
-    <>
+    <div style={{ backgroundColor : "#e0e2e6" }} >
       <div style={{ height: "80vh" }}>
         {/* <img className="w-full h-full object-cover" src={video} alt="" /> */}
         <video
@@ -21,14 +21,15 @@ export const Homepage = () => {
         ></video>
       </div>
       <div
-        className=" m-6 p-4"
+        className=" m-6 p-4 bg-white"
         style={{
           boxShadow:
             "rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset",
         }}
+
       >
         <h2 className="text-4xl">
-          About InterviewSensei, A Digital Interview Platform
+          About SkilledMonk, A Digital Interview Platform
         </h2>
         <div
           className=" m-auto mt-6 p-3 mb-4 text-left"
@@ -40,7 +41,7 @@ export const Homepage = () => {
         >
           <span className="font-bold ">Data Security and Privacy: </span>
           <span>
-            Since interviews involve sensitive information, InterviewSensei
+            Since interviews involve sensitive information, SkilledMonk
             platforms prioritize data security and privacy. They implement
             measures to protect the confidentiality of the interviews and comply
             with relevant data protection regulations.
@@ -74,7 +75,7 @@ export const Homepage = () => {
         >
           <span className="font-bold">Recording and Playback: </span>
           <span>
-            One of the advantages of InterviewSensei platforms is the ability to
+            One of the advantages of SkilledMonk platforms is the ability to
             record interviews. This feature allows interviewers to review
             interviews at a later time and share them with other stakeholders
             for evaluation and feedback.
@@ -106,7 +107,7 @@ export const Homepage = () => {
         >
           <span className="font-bold">Mobile Accessibility: </span>
           <span>
-            InterviewSensei offer mobile accessibility, allowing candidates and
+           SkilledMonk offer mobile accessibility, allowing candidates and
             interviewers to participate in interviews using their smartphones or
             tablets. Mobile compatibility expands accessibility and convenience
             for users who prefer or require mobile devices.
@@ -135,7 +136,7 @@ export const Homepage = () => {
             boxShadow:
               "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
           }}
-          className=" flex flex-col gap-6 p-5 "
+          className=" flex flex-col gap-6 p-5 bg-white "
         >
           <p className="text-2xl font-bold">MERN</p>
           <p>
@@ -157,7 +158,7 @@ export const Homepage = () => {
             boxShadow:
               "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
           }}
-          className=" flex flex-col gap-6 p-5 "
+          className=" flex flex-col gap-6 p-5  bg-white "
         >
           <p className="text-2xl font-bold">NODE</p>
           <p>
@@ -178,7 +179,7 @@ export const Homepage = () => {
             boxShadow:
               "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
           }}
-          className=" flex flex-col gap-6 p-5 "
+          className=" flex flex-col gap-6 p-5  bg-white "
         >
           <p className="text-2xl font-bold">JAVA</p>
           <p>
@@ -196,6 +197,6 @@ export const Homepage = () => {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };
