@@ -5,28 +5,32 @@ SkilledMonk provides you a platform where you can select your tech stack and giv
 # Collaborators
 
 1. Ansh Kathpal (Frontend)
-3. Sudhanshu (Frontend)
-4. Priyanka (Backend)
-5. Abdul Rashid (Backend)
-6. Minal Kumari (Backend)
+2. Shudhanshu (Frontend)
+3. Priyanka Sanodiya (Backend)
+4. Abdul Rashid (Backend)
+5. Minal Kumari (Backend)
 
 # Deployed Link
 
-=> Frontend : 
-=> Backend :
+=> Frontend:  https://codefuse-anshkathpal.vercel.app/
+=> Backend: https://backend-deploy-production-c982.up.railway.app/chatbot
 
 # TechStack Used
 
 => Frontend
+
 React | Redux | Typescript
 
 => Backend
 
+Springboot | Lambok | JPA
 
 => Database
 
+MySQL
 
 => CSS Libraries
+
 Tailwind CSS
 
 # Homepage
