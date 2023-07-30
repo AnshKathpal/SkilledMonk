@@ -1,5 +1,7 @@
 # SkilledMonk
 
+![newlogo-removebg](https://github.com/AnshKathpal/CodeFuse/assets/115460552/aee425d0-ece5-4b98-bf57-cf00356b3547)
+
 SkilledMonk provides you a platform where you can select your tech stack and give one on one interviews with our AI. Our platform also provides you a Q and A section where you can ask any general queries to our AI and also a Study material section where you can read about different tech stacks.
 
 # Collaborators
@@ -13,6 +15,7 @@ SkilledMonk provides you a platform where you can select your tech stack and giv
 # Deployed Link
 
 => Frontend:  https://codefuse-anshkathpal.vercel.app/
+
 => Backend: https://backend-deploy-production-c982.up.railway.app/chatbot
 
 # TechStack Used
