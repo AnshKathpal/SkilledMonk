@@ -2,6 +2,14 @@
 
 SkilledMonk provides you a platform where you can select your tech stack and give one on one interviews with our AI. Our platform also provides you a Q and A section where you can ask any general queries to our AI and also a Study material section where you can read about different tech stacks.
 
+# Collaborators
+
+1. Ansh Kathpal (Frontend)
+3. Sudhanshu (Frontend)
+4. Priyanka (Backend)
+5. Abdul Rashid (Backend)
+6. Minal Kumari (Backend)
+
 # Homepage
 
 <img width="1680" alt="Screenshot 2023-07-30 at 9 27 15 AM" src="https://github.com/AnshKathpal/CodeFuse/assets/115460552/3d8b286c-07d9-4d70-bdb0-bd34417083e9">
