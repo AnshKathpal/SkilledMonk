@@ -1,14 +1,14 @@
 import React from "react";
-import logo from "../Images/Logo.png"
+import logo from "../Images/newlogo-removebg.png"
 
 export const Footer = () => {
   return (
     <>
       <footer style = {{ boxShadow : "rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px" }}>
         <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-          <div className=" grid grid-cols-1 gap-8 lg:grid-cols-3">
-            <div >
-              <img src={logo} className=" mr-5 w-full sm:h-9" alt="logo" style={{height : "100%"}} />
+          <div className=" grid grid-cols-1 lg:grid-cols-3 ">
+            <div className = "relative flex justify-center" >
+              <img src={logo} className="sm:h-9 absolute" alt="logo" style={{width : "60%", height : "100%"}}  />
               {/* <div className="flex mt-8 space-x-6 text-gray-600">
                 <a
                   className="hover:opacity-75"
