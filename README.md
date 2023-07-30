@@ -10,6 +10,25 @@ SkilledMonk provides you a platform where you can select your tech stack and giv
 5. Abdul Rashid (Backend)
 6. Minal Kumari (Backend)
 
+# Deployed Link
+
+=> Frontend : 
+=> Backend :
+
+# TechStack Used
+
+=> Frontend
+React | Redux | Typescript
+
+=> Backend
+
+
+=> Database
+
+
+=> CSS Libraries
+Tailwind CSS
+
 # Homepage
 
 <img width="1680" alt="Screenshot 2023-07-30 at 9 27 15 AM" src="https://github.com/AnshKathpal/CodeFuse/assets/115460552/3d8b286c-07d9-4d70-bdb0-bd34417083e9">
