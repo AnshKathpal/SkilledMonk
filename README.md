@@ -14,7 +14,9 @@ SkilledMonk provides you a platform where you can select your tech stack and giv
 
 # Deployed Link
 
+=> Frontend:  https://codefuse-anshkathpal.vercel.app/
 
+=> Backend: https://backend-deploy-production-c982.up.railway.app/chatbot
 
 # TechStack Used
 
